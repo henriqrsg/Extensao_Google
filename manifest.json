@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Check-List",
+  "version": "0.0.1",
+  "description": "Uma lista de tarefas simples para organizar seu dia.",
+  "author": "Luiz Henrique Romualdo da Silva Guedes",
+  "action": {
+    "default_popup": "interface.html"
+  },
+  "permissions": ["storage"]
+}
