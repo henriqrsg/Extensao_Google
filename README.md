@@ -10,7 +10,7 @@ Esta é uma extensão para o navegador Google Chrome que funciona como uma **che
 - Marcar tarefas como concluídas.
 - Remover tarefas concluídas ou desnecessárias.
 - Interface simples e intuitiva.
-- Armazenamento local para salvar suas tarefas (persistência mesmo após fechar o navegador).
+- Armazenamento local para salvar suas tarefas.
 
 ---
 
@@ -20,3 +20,42 @@ Esta é uma extensão para o navegador Google Chrome que funciona como uma **che
    
    ```bash
    https://github.com/henriqrsg/Extensao_Google.git
+2. Acesse as extensões do google.
+
+- Abra o Google Chrome.
+
+- Digite no chrome:
+   
+   ````bash
+  chrome://extensions/
+
+- Ative o Modo do desenvolvedor (canto superior direito).
+
+- Clique em Carregar sem compactação (ou "Load unpacked").
+
+- Selecione a pasta onde estão os arquivos da sua extensão.
+
+3. Pronto! Sua extensão estará carregada no navegador para testes.
+
+---
+
+## Uso
+
+- Adicone tarefas que você deseja realizar durante o dia.
+- Pressione Enter ou clique no botão verde __adicionar__.
+- Após terminada a tarefa clique na caixinha ao lado da tarefa para marca-la como realizada.
+- Para excluir a tarefa basta clicar no icone do __X__ vermelho ao lado direito.
+
+---
+
+## Estrutura
+
+```plaintext
+Extensao_Google/
+├── manifest.json
+├── style.css
+├── interface.html
+├── script.js
+└── img/
+    └── icon.png
+
