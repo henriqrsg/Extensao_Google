@@ -58,4 +58,9 @@ Extensao_Google/
 ├── script.js
 └── img/
     └── icon.png
+```
+---
 
+## LICENSA
+
+Este projeto está licenciado sob os termos da [MIT License](LICENSE).
