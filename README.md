@@ -48,17 +48,26 @@ Esta é uma extensão para o navegador Google Chrome que funciona como uma **che
 
 ---
 
+## GitHub Pages
+
+Acesse a landing page da extensão:
+
+   ```bash
+   https://henriqrsg.github.io/Extensao_Google/
+   ```
+---
+
 ## Estrutura
 
-```plaintext
-Extensao_Google/
-├── manifest.json
-├── style.css
-├── interface.html
-├── script.js
-└── img/
-    └── icon.png
-```
+   ```plaintext
+   Extensao_Google/
+   ├── manifest.json
+   ├── style.css
+   ├── interface.html
+   ├── script.js
+   └── img/
+       └── icon.png
+   ```
 ---
 
 ## LICENSA
