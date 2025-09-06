@@ -4,146 +4,169 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Check-List Chrome Extension</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: 'Inter', sans-serif;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
     }
     body {
-      background: #f5f7fa;
-      color: #333;
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      color: #fff;
       line-height: 1.6;
     }
     header {
-      background: #4CAF50;
-      color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 80px 20px 60px;
     }
     header h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 15px;
     }
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
     }
     .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
-    .section {
-      margin-bottom: 50px;
+    section {
+      margin-bottom: 70px;
     }
     h2 {
-      color: #4CAF50;
-      margin-bottom: 15px;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      font-weight: 700;
+      color: #fff;
+    }
+    .demo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .demo img {
+      width: 200px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
     .features {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
     }
     .feature-card {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       text-align: center;
-      transition: transform 0.2s;
     }
     .feature-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-10px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.2);
     }
     .feature-card img {
-      width: 50px;
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      font-size: 1.2rem;
       margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .feature-card p {
+      font-size: 0.95rem;
+      opacity: 0.9;
     }
     .btn {
       display: inline-block;
-      background: #4CAF50;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
+      background: #ffce00;
+      color: #222;
+      padding: 14px 28px;
+      border-radius: 8px;
+      font-size: 1.1rem;
       font-weight: 600;
-      transition: background 0.2s;
-      margin-top: 20px;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+      margin-top: 30px;
     }
     .btn:hover {
-      background: #45a049;
+      background: #ffb300;
+      transform: scale(1.05);
     }
     footer {
       text-align: center;
       padding: 30px 20px;
-      background: #f0f0f0;
-      color: #555;
+      background: rgba(0,0,0,0.3);
+      font-size: 0.9rem;
+      color: #eee;
     }
     footer a {
-      color: #4CAF50;
+      color: #ffce00;
       text-decoration: none;
+      font-weight: 600;
     }
-    .demo {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      margin-bottom: 20px;
-    }
-    .demo img {
-      width: 100%;
-      border-radius: 8px;
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>📝 Check-List para Google Chrome</h1>
-  <p>Organize seu dia com tarefas simples, rápidas e fáceis de gerenciar.</p>
+  <h1>📝 Check-List Chrome Extension</h1>
+  <p>Transforme sua rotina em algo mais organizado e produtivo com uma checklist simples e poderosa diretamente no seu navegador.</p>
 </header>
 
 <div class="container">
 
-  <section class="section demo">
-    <h2>Demonstração</h2>
-    <p>Veja como sua lista de tarefas ficará ao usar a extensão:</p>
-    <img src="img/icon.png" alt="Ícone da extensão">
+  <section class="demo">
+    <h2>Veja como funciona</h2>
+    <img src="img/icon.png" alt="Ícone da Extensão">
+    <a class="btn" href="https://github.com/henriqrsg/Extensao_Google" target="_blank">🚀 Instalar Extensão</a>
   </section>
 
-  <section class="section">
+  <section>
     <h2>Funcionalidades</h2>
     <div class="features">
       <div class="feature-card">
-        <img src="img/icon.png" alt="Adicionar tarefa">
+        <img src="img/add.png" alt="Adicionar tarefa">
         <h3>Adicionar Tarefas</h3>
-        <p>Insira rapidamente novas tarefas e organize seu dia.</p>
+        <p>Crie tarefas em segundos e organize sua lista de afazeres.</p>
       </div>
       <div class="feature-card">
-        <img src="img/icon.png" alt="Marcar concluída">
+        <img src="img/check.png" alt="Marcar tarefa">
         <h3>Marcar como Concluída</h3>
-        <p>Marque tarefas concluídas para acompanhar seu progresso.</p>
+        <p>Finalize atividades marcando-as como concluídas.</p>
       </div>
       <div class="feature-card">
-        <img src="img/icon.png" alt="Remover tarefa">
-        <h3>Remover Tarefas</h3>
-        <p>Exclua tarefas já realizadas ou desnecessárias com um clique.</p>
+        <img src="img/delete.png" alt="Excluir tarefa">
+        <h3>Excluir Tarefas</h3>
+        <p>Remova tarefas finalizadas ou desnecessárias rapidamente.</p>
       </div>
       <div class="feature-card">
-        <img src="img/icon.png" alt="Salvar">
+        <img src="img/save.png" alt="Salvar tarefas">
         <h3>Salvamento Automático</h3>
-        <p>Tarefas são salvas automaticamente no seu navegador.</p>
+        <p>Tudo é salvo automaticamente no navegador usando o storage do Chrome.</p>
       </div>
     </div>
-    <a class="btn" href="https://github.com/henriqrsg/Extensao_Google" target="_blank">Baixar / Testar Extensão</a>
   </section>
 
-  <section class="section">
+  <section>
     <h2>Licença</h2>
-    <p>Esta extensão está licenciada sob a <a href="LICENSE" target="_blank">MIT License</a>.</p>
+    <p style="text-align: center;">Este projeto é open-source e está sob a <a href="LICENSE" target="_blank">MIT License</a>.</p>
   </section>
 
 </div>
