@@ -61,12 +61,17 @@ Acesse a landing page da extensão:
 
    ```plaintext
    Extensao_Google/
-   ├── manifest.json
-   ├── style.css
-   ├── interface.html
-   ├── script.js
-   └── img/
-       └── icon.png
+├── docs/
+│   └── index.html
+├── img/
+│   └── icon.png
+├── LICENSE
+├── README.md
+├── interface.html
+├── manifest.json
+├── script.js
+└── style.css
+
    ```
 ---
 
