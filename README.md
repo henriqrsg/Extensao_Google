@@ -65,7 +65,11 @@ Acesse a landing page da extensão:
 ├── docs/
 │   └── index.html
 ├── img/
+│   └── add.png
+│   └── check.png
+│   └── delete.png
 │   └── icon.png
+│   └── save.png
 ├── LICENSE
 ├── README.md
 ├── interface.html
