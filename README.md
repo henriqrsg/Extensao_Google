@@ -58,6 +58,15 @@ Acesse a landing page da extensão:
    ```
 ---
 
+## Release
+
+Baixe a versão empacotada (.zip):
+
+   ```bash
+   https://github.com/henriqrsg/Extensao_Google.git
+   ```
+
+---
 ## Estrutura
 
    ```plaintext
