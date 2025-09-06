@@ -20,15 +20,16 @@ Esta é uma extensão para o navegador Google Chrome que funciona como uma **che
    
    ```bash
    https://github.com/henriqrsg/Extensao_Google.git
+   ```
 2. Acesse as extensões do google.
 
 - Abra o Google Chrome.
 
 - Digite no chrome:
    
-   ````bash
+   ```bash
   chrome://extensions/
-
+   ```
 - Ative o Modo do desenvolvedor (canto superior direito).
 
 - Clique em Carregar sem compactação (ou "Load unpacked").
