@@ -53,7 +53,7 @@ Esta é uma extensão para o navegador Google Chrome que funciona como uma **che
 Acesse a landing page da extensão:
 
    ```bash
-   https://henriqrsg.github.io/Extensao_Google/
+   https://henriqrsg.github.io/Extensao_Google
    ```
 ---
 
