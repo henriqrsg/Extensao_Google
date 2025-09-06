@@ -3,33 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CheckList - Extensão Chrome</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Check-List Chrome Extension</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #4CAF50;
+      margin-bottom: 15px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .feature-card img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background: #45a049;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f0f0f0;
+      color: #555;
+    }
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    .demo {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .demo img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>📝 Extensão CheckList</h1>
-    <p>Organize suas tarefas diárias de forma simples e prática.</p>
 
-    <h2>Instalação</h2>
-    <ol>
-      <li>Baixe ou clone o repositório do GitHub.</li>
-      <li>Abra o Chrome e vá em <code>chrome://extensions/</code>.</li>
-      <li>Ative o Modo do desenvolvedor.</li>
-      <li>Carregue a extensão usando "Load unpacked".</li>
-    </ol>
+<header>
+  <h1>📝 Check-List para Google Chrome</h1>
+  <p>Organize seu dia com tarefas simples, rápidas e fáceis de gerenciar.</p>
+</header>
 
-    <h2>Download</h2>
-    <p>
-      Você pode baixar a versão empacotada (.zip) da extensão em: <a href="https://github.com/henriqrsg/Extensao_Google/releases">Releases</a>
-    </p>
+<div class="container">
 
+  <section class="section demo">
+    <h2>Demonstração</h2>
+    <p>Veja como sua lista de tarefas ficará ao usar a extensão:</p>
+    <img src="img/icon.png" alt="Ícone da extensão">
+  </section>
+
+  <section class="section">
     <h2>Funcionalidades</h2>
-    <ul>
-      <li>Adicionar novas tarefas do dia.</li>
-      <li>Marcar tarefas como concluídas.</li>
-      <li>Remover tarefas concluídas ou desnecessárias.</li>
-    </ul>
-  </div>
+    <div class="features">
+      <div class="feature-card">
+        <img src="img/icon.png" alt="Adicionar tarefa">
+        <h3>Adicionar Tarefas</h3>
+        <p>Insira rapidamente novas tarefas e organize seu dia.</p>
+      </div>
+      <div class="feature-card">
+        <img src="img/icon.png" alt="Marcar concluída">
+        <h3>Marcar como Concluída</h3>
+        <p>Marque tarefas concluídas para acompanhar seu progresso.</p>
+      </div>
+      <div class="feature-card">
+        <img src="img/icon.png" alt="Remover tarefa">
+        <h3>Remover Tarefas</h3>
+        <p>Exclua tarefas já realizadas ou desnecessárias com um clique.</p>
+      </div>
+      <div class="feature-card">
+        <img src="img/icon.png" alt="Salvar">
+        <h3>Salvamento Automático</h3>
+        <p>Tarefas são salvas automaticamente no seu navegador.</p>
+      </div>
+    </div>
+    <a class="btn" href="https://github.com/henriqrsg/Extensao_Google" target="_blank">Baixar / Testar Extensão</a>
+  </section>
+
+  <section class="section">
+    <h2>Licença</h2>
+    <p>Esta extensão está licenciada sob a <a href="LICENSE" target="_blank">MIT License</a>.</p>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Luiz Henrique Romualdo da Silva Guedes | <a href="https://github.com/henriqrsg/Extensao_Google" target="_blank">GitHub</a>
+</footer>
+
 </body>
 </html>
